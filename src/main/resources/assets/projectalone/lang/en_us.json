@@ -1,4 +1,10 @@
 {
   "item.projectalone.bismuth": "Bismuth",
-  "item.projectalone.raw_bismuth": "Raw Bismuth"
+  "item.projectalone.raw_bismuth": "Raw Bismuth",
+
+  "block.projectalone.bismuth_block": "Block of Bismuth",
+  "block.projectalone.bismuth_ore": "Bismuth Ore",
+
+  "entity.mccourse.stalker": "Stalker",
+  "entity.mccourse.gecko": "Gecko"
 }

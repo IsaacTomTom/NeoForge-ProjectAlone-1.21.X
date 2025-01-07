@@ -1,6 +1,13 @@
 package com.abumwiththedrip.projectalone;
 
+import com.abumwiththedrip.projectalone.block.ModBlocks;
+import com.abumwiththedrip.projectalone.entity.ModEntities;
+/*import com.abumwiththedrip.projectalone.entity.client.GeckoRenderer;
+import com.abumwiththedrip.projectalone.entity.client.StalkerRenderer;
+
+ */
 import com.abumwiththedrip.projectalone.item.ModItems;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -40,6 +47,9 @@ public class ProjectAlone
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModEntities.register(modEventBus);
+
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -57,6 +67,11 @@ public class ProjectAlone
             event.accept(ModItems.BISMUTH);
             event.accept(ModItems.RAW_BISMUTH);
         }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.BISMUTH_BLOCK);
+            event.accept(ModBlocks.BISMUTH_ORE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -70,7 +85,10 @@ public class ProjectAlone
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            /*EntityRenderers.register(ModEntities.STALKER.get(), StalkerRenderer::new);
+            EntityRenderers.register(ModEntities.GECKO.get(), GeckoRenderer::new);
 
+             */
         }
     }
 }
