@@ -4,6 +4,13 @@
 
   "block.projectalone.bismuth_block": "Block of Bismuth",
   "block.projectalone.bismuth_ore": "Bismuth Ore",
+  "block.projectalone.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
+
+
+  "creativetab.projectalone.bismuth_items": "Bismuth Items",
+  "creativetab.projectalone.bismuth_blocks": "Bismuth Blocks",
+  "creativetab.projectalone.projectalone_mobs": "ProjectAlone Mobs",
+
 
   "entity.mccourse.stalker": "Stalker",
   "entity.mccourse.gecko": "Gecko"

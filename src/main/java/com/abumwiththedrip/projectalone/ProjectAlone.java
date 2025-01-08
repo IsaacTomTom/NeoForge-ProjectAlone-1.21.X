@@ -6,6 +6,7 @@ import com.abumwiththedrip.projectalone.entity.ModEntities;
 import com.abumwiththedrip.projectalone.entity.client.StalkerRenderer;
 
  */
+import com.abumwiththedrip.projectalone.item.ModCreativeModeTabs;
 import com.abumwiththedrip.projectalone.item.ModItems;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -46,6 +47,8 @@ public class ProjectAlone
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModEntities.register(modEventBus);
@@ -71,6 +74,8 @@ public class ProjectAlone
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.BISMUTH_BLOCK);
             event.accept(ModBlocks.BISMUTH_ORE);
+            event.accept(ModBlocks.BISMUTH_DEEPSLATE_ORE);
+
         }
     }
 
@@ -85,10 +90,11 @@ public class ProjectAlone
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            /*EntityRenderers.register(ModEntities.STALKER.get(), StalkerRenderer::new);
-            EntityRenderers.register(ModEntities.GECKO.get(), GeckoRenderer::new);
 
-             */
         }
     }
 }
+ /*EntityRenderers.register(ModEntities.STALKER.get(), StalkerRenderer::new);
+            EntityRenderers.register(ModEntities.GECKO.get(), GeckoRenderer::new);
+
+             */

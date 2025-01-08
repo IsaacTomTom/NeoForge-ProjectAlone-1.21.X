@@ -22,11 +22,6 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.BISMUTH);
                         output.accept(ModItems.RAW_BISMUTH);
-
-                        output.accept(ModItems.STALKER_SPAWN_EGG);
-                        output.accept(ModItems.GECKO_SPAWN_EGG);
-
-
                     }).build());
 
     public static final Supplier<CreativeModeTab> BISMUTH_BLOCK_TAB = CREATIVE_MODE_TAB.register("bismuth_blocks_tab",
@@ -36,7 +31,20 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.BISMUTH_BLOCK);
                         output.accept(ModBlocks.BISMUTH_ORE);
+                        output.accept(ModBlocks.BISMUTH_DEEPSLATE_ORE);
 
+                    }).build());
+
+    public static final Supplier<CreativeModeTab> PROJECTALONE_MOB_TAB = CREATIVE_MODE_TAB.register("projectalone_mob_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.BISMUTH_BLOCK))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(ProjectAlone.MOD_ID, "bismuth_items_tab"))
+                    .title(Component.translatable("creativetab.projectalone.projectalone_mobs"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                       /*
+                        output.accept(ModItems.STALKER_SPAWN_EGG);
+                        output.accept(ModItems.GECKO_SPAWN_EGG);
+
+                        */
                     }).build());
 
 
