@@ -1,6 +1,7 @@
 package com.abumwiththedrip.projectalone.block;
 
 import com.abumwiththedrip.projectalone.ProjectAlone;
+import com.abumwiththedrip.projectalone.block.custom.MagicBlock;
 import com.abumwiththedrip.projectalone.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -31,6 +32,8 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(3,6),
                     BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
+    public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

@@ -2,6 +2,7 @@ package com.abumwiththedrip.projectalone.item;
 
 import com.abumwiththedrip.projectalone.ProjectAlone;
 import com.abumwiththedrip.projectalone.entity.ModEntities;
+import com.abumwiththedrip.projectalone.item.custom.ChiselItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.common.DeferredSpawnEggItem;
@@ -17,6 +18,9 @@ public class ModItems {
 
     public static final DeferredItem<Item> RAW_BISMUTH = ITEMS.register("raw_bismuth",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
+            () -> new ChiselItem(new Item.Properties().durability(32)));
 
     public static final DeferredItem<Item> STALKER_SPAWN_EGG = ITEMS.register("stalker_spawn_egg",
             () -> new DeferredSpawnEggItem(ModEntities.STALKER, 0x31afaf, 0xffac00,

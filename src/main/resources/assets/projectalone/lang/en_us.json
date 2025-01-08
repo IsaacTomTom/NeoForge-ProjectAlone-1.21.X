@@ -1,10 +1,14 @@
 {
   "item.projectalone.bismuth": "Bismuth",
   "item.projectalone.raw_bismuth": "Raw Bismuth",
+  "item.projectalone.chisel": "Chisel",
+
 
   "block.projectalone.bismuth_block": "Block of Bismuth",
   "block.projectalone.bismuth_ore": "Bismuth Ore",
   "block.projectalone.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
+  "block.projectalone.magic_block": "Magic Block",
+
 
 
   "creativetab.projectalone.bismuth_items": "Bismuth Items",
