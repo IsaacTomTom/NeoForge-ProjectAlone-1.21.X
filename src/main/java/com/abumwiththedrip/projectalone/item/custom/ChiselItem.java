@@ -1,7 +1,6 @@
 package com.abumwiththedrip.projectalone.item.custom;
 
 import com.abumwiththedrip.projectalone.block.ModBlocks;
-import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -12,8 +11,6 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-
-import java.util.Map;
 
 import java.util.Map;
 import java.util.AbstractMap;

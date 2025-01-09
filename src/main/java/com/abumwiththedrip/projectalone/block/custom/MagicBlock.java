@@ -8,6 +8,8 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
@@ -73,10 +75,6 @@ public class MagicBlock extends Block {
                     if (itemEntity.getItem().getItem() == Items.DANDELION) {
                         itemEntity.setItem(new ItemStack(Items.WITHER_ROSE, itemEntity.getItem().getCount()));
                     }
-                } else if (entity instanceof Player player) {
-                    // Handle player-specific logic (if needed)
-                    // Example: Play different sound for players interacting
-                    level.playSound(player, pos, SoundEvents.PLAYER_LEVELUP, SoundSource.BLOCKS, 1f, 1f);
                 }
             }
         }
@@ -112,8 +110,6 @@ public class MagicBlock extends Block {
             if(itemEntity.getItem().getItem() == Items.DANDELION) {
                 itemEntity.setItem(new ItemStack(Items.WITHER_ROSE, itemEntity.getItem().getCount()));
             }
-        } else if (entity instanceof Player) {
-            // Handle player interactions differently (if needed)
         }
     }
 
