@@ -27,7 +27,7 @@ public class ModCreativeModeTabs {
                     }).build());
 
     public static final Supplier<CreativeModeTab> BISMUTH_BLOCK_TAB = CREATIVE_MODE_TAB.register("bismuth_blocks_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.BISMUTH_BLOCK))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.BISMUTH_BLOCK.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(ProjectAlone.MOD_ID, "bismuth_items_tab"))
                     .title(Component.translatable("creativetab.projectalone.bismuth_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
@@ -36,6 +36,24 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BISMUTH_DEEPSLATE_ORE);
                         output.accept(ModBlocks.MAGIC_BLOCK);
 
+                    }).build());
+
+    public static final Supplier<CreativeModeTab> BISMUTH_FOOD_TAB = CREATIVE_MODE_TAB.register("bismuth_foods_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.RADISH.get()))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(ProjectAlone.MOD_ID, "bismuth_blocks_tab"))
+                    .title(Component.translatable("creativetab.projectalone.bismuth_foods"))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                        output.accept(ModItems.RADISH);
+                    }).build());
+
+    public static final Supplier<CreativeModeTab> BISMUTH_INGREDIENTS_TAB = CREATIVE_MODE_TAB.register("bismuth_ingredients_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.FROSTFIRE_ICE.get()))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(ProjectAlone.MOD_ID, "bismuth_foods_tab"))
+                    .title(Component.translatable("creativetab.projectalone.bismuth_ingredients"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.FROSTFIRE_ICE);
+                        output.accept(ModItems.STARLIGHT_ASHES);
                     }).build());
 
     public static final Supplier<CreativeModeTab> PROJECTALONE_MOB_TAB = CREATIVE_MODE_TAB.register("projectalone_mob_tab",

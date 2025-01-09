@@ -71,13 +71,20 @@ public class ProjectAlone
             event.accept(ModItems.RAW_BISMUTH);
         }
 
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.RADISH);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.FROSTFIRE_ICE);
+            event.accept(ModItems.STARLIGHT_ASHES);
+        }
+
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.BISMUTH_BLOCK);
             event.accept(ModBlocks.BISMUTH_ORE);
             event.accept(ModBlocks.BISMUTH_DEEPSLATE_ORE);
             event.accept(ModBlocks.MAGIC_BLOCK);
-
-
         }
     }
 

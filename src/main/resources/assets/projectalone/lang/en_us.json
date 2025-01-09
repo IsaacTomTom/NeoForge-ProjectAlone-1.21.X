@@ -3,19 +3,30 @@
   "item.projectalone.raw_bismuth": "Raw Bismuth",
   "item.projectalone.chisel": "Chisel",
 
+  "item.projectalone.radish": "Radish",
+  "item.projectalone.frostfire_ice": "Frostfire Ice",
+  "item.projectalone.starlight_ashes": "Starlight Ashes",
 
   "block.projectalone.bismuth_block": "Block of Bismuth",
   "block.projectalone.bismuth_ore": "Bismuth Ore",
   "block.projectalone.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
+
   "block.projectalone.magic_block": "Magic Block",
-
-
 
   "creativetab.projectalone.bismuth_items": "Bismuth Items",
   "creativetab.projectalone.bismuth_blocks": "Bismuth Blocks",
+  "creativetab.projectalone.bismuth_foods": "Bismuth Foods",
+  "creativetab.projectalone.bismuth_ingredients": "Bismuth Ingredients",
   "creativetab.projectalone.projectalone_mobs": "ProjectAlone Mobs",
 
 
   "entity.mccourse.stalker": "Stalker",
-  "entity.mccourse.gecko": "Gecko"
+  "entity.mccourse.gecko": "Gecko",
+
+  "tooltip.projectalone.chisel.shift_down": "\nStone -> Stone Bricks\nEnd Stone -> End Stone Bricks\nDeepslate -> Deepslate Bricks\nGold Block -> Iron Block\nIron Block -> Stone\nNetherrack -> Bismuth Block",
+  "tooltip.projectalone.chisel": "\nPress §eShift§r for more Information",
+
+  "tooltip.projectalone.radish.tooltip": "\nTastes really great!",
+
+  "tooltip.projectalone.magic_block.tooltip": "\nThis Block is very §9MAGICAL!§r\nTurns Bismuth into Diamond\nand Dandelion into Wither Rose by touch"
 }
