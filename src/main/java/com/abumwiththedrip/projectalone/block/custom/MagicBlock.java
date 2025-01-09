@@ -1,6 +1,7 @@
 package com.abumwiththedrip.projectalone.block.custom;
 
 import com.abumwiththedrip.projectalone.item.ModItems;
+import com.abumwiththedrip.projectalone.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -73,11 +74,11 @@ public class MagicBlock extends Block {
                 // Check if the item is near the bottom of the block (adjust threshold as needed)
                 if (entityY <= pos.getY() + 0.1D) {
                     // Handle item-specific logic for bottom detection
-                    if (itemEntity.getItem().getItem() == ModItems.RAW_BISMUTH.get()) {
+                    if (isValidItemB(itemEntity.getItem())) {
                         itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
                     }
 
-                    if (itemEntity.getItem().getItem() == Items.DANDELION) {
+                    if (isValidItemD(itemEntity.getItem())) {
                         itemEntity.setItem(new ItemStack(Items.WITHER_ROSE, itemEntity.getItem().getCount()));
                     }
                 }
@@ -108,14 +109,22 @@ public class MagicBlock extends Block {
     protected void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
         if (entity instanceof ItemEntity itemEntity) {
             // Handle item interactions
-            if(itemEntity.getItem().getItem() == ModItems.RAW_BISMUTH.get()) {
+            if(isValidItemB(itemEntity.getItem())) {
                 itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
             }
 
-            if(itemEntity.getItem().getItem() == Items.DANDELION) {
+            if(isValidItemD(itemEntity.getItem())) {
                 itemEntity.setItem(new ItemStack(Items.WITHER_ROSE, itemEntity.getItem().getCount()));
             }
         }
+    }
+
+    private boolean isValidItemB(ItemStack item) {
+        return item.is(ModTags.Items.TRANSFORMABLE_ITEMS_B);
+    }
+
+    private boolean isValidItemD(ItemStack item) {
+        return item.is(ModTags.Items.TRANSFORMABLE_ITEMS_D);
     }
 
 

@@ -19,7 +19,9 @@ public class ModTags {
     }
 
     public static class Items {
-        public static final TagKey<Item> TRANSFORMABLE_ITEMS = createTag("transformable_items");
+        public static final TagKey<Item> TRANSFORMABLE_ITEMS_B = createTag("transformable_items_b");
+
+        public static final TagKey<Item> TRANSFORMABLE_ITEMS_D = createTag("transformable_items_d");
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(ProjectAlone.MOD_ID, name));
