@@ -6,6 +6,7 @@ import com.abumwiththedrip.projectalone.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -21,9 +22,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(ModTags.Items.TRANSFORMABLE_ITEMS_B)
-                .add(ModItems.BISMUTH.get())
-                .add(ModItems.RAW_BISMUTH.get())
-                .add(ModItems.CHISEL.get());
+                .add(ModItems.BISMUTH.get());
 
+        tag(ModTags.Items.TRANSFORMABLE_ITEMS_D)
+                .add(Items.DANDELION);
     }
+
+
 }

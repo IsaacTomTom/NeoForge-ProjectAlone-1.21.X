@@ -23,9 +23,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.BISMUTH.get());
         basicItem(ModItems.RAW_BISMUTH.get());
 
-        withExistingParent(ModItems.STALKER_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
-        withExistingParent(ModItems.GECKO_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
-
+        basicItem(ModItems.RADISH.get());
+        basicItem(ModItems.STARLIGHT_ASHES.get());
+        basicItem(ModItems.FROSTFIRE_ICE.get());
+        basicItem(ModItems.CHISEL.get());
+        /*
+        basicItem(ModItems.STALKER_SPAWN_EGG.get());
+        basicItem(ModItems.GECKO_SPAWN_EGG.get());
+         */
     }
 
     private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {
