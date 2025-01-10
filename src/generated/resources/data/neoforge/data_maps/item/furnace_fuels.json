@@ -1,0 +1,10 @@
+{
+  "values": {
+    "projectalone:frostfire_ice": {
+      "burn_time": 2400
+    },
+    "projectalone:starlight_ashes": {
+      "burn_time": 1200
+    }
+  }
+}

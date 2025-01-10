@@ -26,22 +26,25 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        // Self-dropping blocks
         dropSelf(ModBlocks.BISMUTH_BLOCK.get());
         dropSelf(ModBlocks.MAGIC_BLOCK.get());
 
+        // Ores with Fortune application
         add(ModBlocks.BISMUTH_ORE.get(),
-                block -> createOreDrop(ModBlocks.BISMUTH_ORE.get(), ModItems.RAW_BISMUTH.get()));
+                block -> createOreDrops(ModBlocks.BISMUTH_ORE.get(), ModItems.RAW_BISMUTH.get()));
         add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get(),
-                block -> createMultipleOreDrops(ModBlocks.BISMUTH_DEEPSLATE_ORE.get(), ModItems.RAW_BISMUTH.get(), 2, 5));
-
+                block -> createOreDrops(ModBlocks.BISMUTH_DEEPSLATE_ORE.get(), ModItems.RAW_BISMUTH.get()));
     }
 
-    protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
+    /**
+     * Creates loot tables for ores with a default drop of 1 item and Fortune enchantment effects.
+     */
+    protected LootTable.Builder createOreDrops(Block pBlock, Item pItem) {
         HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
         return this.createSilkTouchDispatchTable(pBlock,
-                this.applyExplosionDecay(pBlock, LootItem.lootTableItem(item)
-                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(minDrops, maxDrops)))
-                        .apply(ApplyBonusCount.addOreBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE)))));
+                this.applyExplosionDecay(pBlock, LootItem.lootTableItem(pItem)
+                        .apply(ApplyBonusCount.addOreBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE))))); // Fortune effect
     }
 
     @Override
