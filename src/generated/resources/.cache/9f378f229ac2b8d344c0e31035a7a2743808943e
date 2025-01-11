@@ -1,3 +1,6 @@
-// 1.21.1	2025-01-09T19:35:52.747896	Tags for minecraft:block mod id projectalone
+// 1.21.1	2025-01-09T20:41:18.4284619	Tags for minecraft:block mod id projectalone
+60401535b1836eca87d9d1ecf8fb19a661c594c6 data/minecraft/tags/block/fences.json
+aae368bf36a14bf422a93fa36577e34ae0b36ace data/minecraft/tags/block/fence_gates.json
 4c048aea19686c365e20dd233a1d6d8fdbd091f5 data/minecraft/tags/block/mineable/pickaxe.json
 4c048aea19686c365e20dd233a1d6d8fdbd091f5 data/minecraft/tags/block/needs_iron_tool.json
+65fb7cd7c4b03bc93b4e9d46f58587b608da4092 data/minecraft/tags/block/walls.json

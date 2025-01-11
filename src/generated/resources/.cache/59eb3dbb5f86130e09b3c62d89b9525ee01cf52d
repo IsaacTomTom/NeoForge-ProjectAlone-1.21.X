@@ -1,5 +1,14 @@
-// 1.21.1	2025-01-09T20:19:38.7942277	Loot Tables
+// 1.21.1	2025-01-09T20:41:18.4245228	Loot Tables
 77e455b402b9c12ffd96fbb5045ff6ba1ac5c8ab data/projectalone/loot_table/blocks/bismuth_block.json
+5e95c0cf78419aa5096aff603177927d48ac65fe data/projectalone/loot_table/blocks/bismuth_button.json
 4dbd88965916297d4fb95a933e3762f5bd774c0b data/projectalone/loot_table/blocks/bismuth_deepslate_ore.json
+c11b7915a4efb80c3ebdd86a22a5a161ffece042 data/projectalone/loot_table/blocks/bismuth_door.json
+e478b26ed4d74bc087b535fdc675cb5b16c7910c data/projectalone/loot_table/blocks/bismuth_fence.json
+c6a6d4bf51221db9f3e2531f4016e7b6e35a32f2 data/projectalone/loot_table/blocks/bismuth_fence_gate.json
 b585066fc4e5d5959a8c7476bd91748ec6d9f9a7 data/projectalone/loot_table/blocks/bismuth_ore.json
+41a97f93c04a62bc95f06ee3521d7f20d13b965d data/projectalone/loot_table/blocks/bismuth_pressure_plate.json
+a33ca242ce7e23c4fa4c85477f9d4829ef59fd15 data/projectalone/loot_table/blocks/bismuth_slab.json
+c07fa19855b2766c515dbee0ea98ed2afee20bae data/projectalone/loot_table/blocks/bismuth_stairs.json
+ac0cd94e489c7dd241a2c32b29178e08ea3f7db8 data/projectalone/loot_table/blocks/bismuth_trapdoor.json
+ce506f11651814142f7a8f4904cc9648f89b7953 data/projectalone/loot_table/blocks/bismuth_wall.json
 5d953e80d074a700dc5d8a171e514129fece7a8d data/projectalone/loot_table/blocks/magic_block.json

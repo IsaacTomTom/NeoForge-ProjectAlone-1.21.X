@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "projectalone:block/bismuth_pressure_plate"
+    },
+    "powered=true": {
+      "model": "projectalone:block/bismuth_pressure_plate_down"
+    }
+  }
+}

@@ -85,6 +85,19 @@ public class ProjectAlone
             event.accept(ModBlocks.BISMUTH_ORE);
             event.accept(ModBlocks.BISMUTH_DEEPSLATE_ORE);
             event.accept(ModBlocks.MAGIC_BLOCK);
+
+            event.accept(ModBlocks.BISMUTH_STAIRS);
+            event.accept(ModBlocks.BISMUTH_SLAB);
+
+            event.accept(ModBlocks.BISMUTH_PRESSURE_PLATE);
+            event.accept(ModBlocks.BISMUTH_BUTTON);
+
+            event.accept(ModBlocks.BISMUTH_FENCE);
+            event.accept(ModBlocks.BISMUTH_FENCE_GATE);
+            event.accept(ModBlocks.BISMUTH_WALL);
+
+            event.accept(ModBlocks.BISMUTH_DOOR);
+            event.accept(ModBlocks.BISMUTH_TRAPDOOR);
         }
     }
 

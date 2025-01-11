@@ -13,6 +13,19 @@
 
   "block.projectalone.magic_block": "Magic Block",
 
+  "block.projectalone.bismuth_stairs": "Bismuth Stairs",
+  "block.projectalone.bismuth_slab": "Bismuth Slab",
+
+  "block.projectalone.bismuth_button": "Bismuth Button",
+  "block.projectalone.bismuth_pressure_plate": "Bismuth Pressure Plate",
+
+  "block.projectalone.bismuth_fence": "Bismuth Fence",
+  "block.projectalone.bismuth_fence_gate": "Bismuth Fence Gate",
+  "block.projectalone.bismuth_wall": "Bismuth Wall",
+
+  "block.projectalone.bismuth_door": "Bismuth Door",
+  "block.projectalone.bismuth_trapdoor": "Bismuth Trapdoor",
+
   "creativetab.projectalone.bismuth_items": "Bismuth Items",
   "creativetab.projectalone.bismuth_blocks": "Bismuth Blocks",
   "creativetab.projectalone.bismuth_foods": "Bismuth Foods",
