@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "projectalone:block/bismuth_lamp_on"
+  }
+}

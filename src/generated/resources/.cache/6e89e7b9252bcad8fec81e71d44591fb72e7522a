@@ -1,8 +1,14 @@
-// 1.21.1	2025-01-09T20:41:18.4159046	Item Models: projectalone
+// 1.21.1	2025-01-11T20:11:51.7617446	Item Models: projectalone
 c3e517c179927789574c9223a3311a6d78e3975a assets/projectalone/models/item/bismuth.json
+64003d23e74b654406a182ac4f1177acc143ed44 assets/projectalone/models/item/bismuth_axe.json
 cdba7df0725d7df30cd2c7472b6e2ec19fcaebf5 assets/projectalone/models/item/bismuth_button.json
 6a1ac309e93e5e49e14a5f977f31cf0a867913cf assets/projectalone/models/item/bismuth_door.json
 c8b76018ebddda1271f058f0cbd0716e5248218d assets/projectalone/models/item/bismuth_fence.json
+1d3f465654283a3879f73934c7ae35da42119bdf assets/projectalone/models/item/bismuth_hammer.json
+1a9f29e311d7984dcf4bd6e1d35c6c2182388629 assets/projectalone/models/item/bismuth_hoe.json
+3d37a19c996da1cc07f728486e282cdd61b7d3c7 assets/projectalone/models/item/bismuth_pickaxe.json
+adfea10ebf89cdb45be34204eaa52a7bfd68b216 assets/projectalone/models/item/bismuth_shovel.json
+2e9f27469d8b717c7ea1ba4a28f05ada6ad57c91 assets/projectalone/models/item/bismuth_sword.json
 56416c9a6f553c6311f0f944c534ba90d583f7d7 assets/projectalone/models/item/bismuth_wall.json
 9840b7b07f08f53d0c325a0b31219f1efb7e5322 assets/projectalone/models/item/chisel.json
 4be1731cc44004a360bfeb5a8fe09940f648e39d assets/projectalone/models/item/frostfire_ice.json

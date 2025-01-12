@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "projectalone:item/bismuth_hammer"
+  }
+}

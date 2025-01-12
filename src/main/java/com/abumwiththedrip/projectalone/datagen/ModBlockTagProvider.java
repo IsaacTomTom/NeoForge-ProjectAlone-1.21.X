@@ -2,6 +2,7 @@ package com.abumwiththedrip.projectalone.datagen;
 
 import com.abumwiththedrip.projectalone.ProjectAlone;
 import com.abumwiththedrip.projectalone.block.ModBlocks;
+import com.abumwiththedrip.projectalone.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -28,11 +29,21 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.BISMUTH_BLOCK.get())
                 .add(ModBlocks.BISMUTH_ORE.get())
                 .add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get())
-                .add(ModBlocks.MAGIC_BLOCK.get());
+                .add(ModBlocks.MAGIC_BLOCK.get())
+                .add(ModBlocks.BISMUTH_LAMP.get());
+
 
         tag(BlockTags.FENCES).add(ModBlocks.BISMUTH_FENCE.get());
         tag(BlockTags.FENCE_GATES).add(ModBlocks.BISMUTH_FENCE_GATE.get());
         tag(BlockTags.WALLS).add(ModBlocks.BISMUTH_WALL.get());
+
+        tag(ModTags.Blocks.NEEDS_BISMUTH_TOOL)
+                .add(ModBlocks.BISMUTH_LAMP.get())
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_BISMUTH_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+                .remove(ModTags.Blocks.NEEDS_BISMUTH_TOOL);
 
     }
 }

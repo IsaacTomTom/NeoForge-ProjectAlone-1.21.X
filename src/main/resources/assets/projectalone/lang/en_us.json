@@ -3,6 +3,15 @@
   "item.projectalone.raw_bismuth": "Raw Bismuth",
   "item.projectalone.chisel": "Chisel",
 
+  "item.projectalone.bismuth_sword": "Bismuth Sword",
+  "item.projectalone.bismuth_pickaxe": "Bismuth Pickaxe",
+  "item.projectalone.bismuth_shovel": "Bismuth Shovel",
+  "item.projectalone.bismuth_axe": "Bismuth Axe",
+  "item.projectalone.bismuth_hoe": "Bismuth Hoe",
+
+  "item.projectalone.bismuth_hammer": "Bismuth Hammer",
+
+
   "item.projectalone.radish": "Radish",
   "item.projectalone.frostfire_ice": "Frostfire Ice",
   "item.projectalone.starlight_ashes": "Starlight Ashes",
@@ -25,6 +34,8 @@
 
   "block.projectalone.bismuth_door": "Bismuth Door",
   "block.projectalone.bismuth_trapdoor": "Bismuth Trapdoor",
+
+  "block.projectalone.bismuth_lamp": "Bismuth Lamp",
 
   "creativetab.projectalone.bismuth_items": "Bismuth Items",
   "creativetab.projectalone.bismuth_blocks": "Bismuth Blocks",

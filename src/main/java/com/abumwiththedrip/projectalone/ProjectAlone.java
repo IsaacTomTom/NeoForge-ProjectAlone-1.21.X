@@ -1,6 +1,7 @@
 package com.abumwiththedrip.projectalone;
 
 import com.abumwiththedrip.projectalone.block.ModBlocks;
+import com.abumwiththedrip.projectalone.component.ModDataComponents;
 import com.abumwiththedrip.projectalone.entity.ModEntities;
 /*import com.abumwiththedrip.projectalone.entity.client.GeckoRenderer;
 import com.abumwiththedrip.projectalone.entity.client.StalkerRenderer;
@@ -53,6 +54,9 @@ public class ProjectAlone
         ModBlocks.register(modEventBus);
         ModEntities.register(modEventBus);
 
+        ModDataComponents.register(modEventBus);
+
+
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -80,6 +84,18 @@ public class ProjectAlone
             event.accept(ModItems.STARLIGHT_ASHES);
         }
 
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.BISMUTH_PICKAXE);
+            event.accept(ModItems.BISMUTH_HOE);
+            event.accept(ModItems.BISMUTH_SHOVEL);
+            event.accept(ModItems.CHISEL);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.BISMUTH_SWORD);
+            event.accept(ModItems.BISMUTH_AXE);
+        }
+
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.BISMUTH_BLOCK);
             event.accept(ModBlocks.BISMUTH_ORE);
@@ -98,6 +114,9 @@ public class ProjectAlone
 
             event.accept(ModBlocks.BISMUTH_DOOR);
             event.accept(ModBlocks.BISMUTH_TRAPDOOR);
+
+            event.accept(ModBlocks.BISMUTH_LAMP);
+
         }
     }
 

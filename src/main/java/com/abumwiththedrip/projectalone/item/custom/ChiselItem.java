@@ -1,6 +1,7 @@
 package com.abumwiththedrip.projectalone.item.custom;
 
 import com.abumwiththedrip.projectalone.block.ModBlocks;
+import com.abumwiththedrip.projectalone.component.ModDataComponents;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
@@ -48,6 +49,9 @@ public class ChiselItem extends Item {
                         item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
                 level.playSound(null, context.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
+
+                context.getItemInHand().set(ModDataComponents.COORDINATES, context.getClickedPos());
+
             }
         }
 
@@ -60,6 +64,10 @@ public class ChiselItem extends Item {
             tooltipComponents.add(Component.translatable("tooltip.projectalone.chisel.shift_down"));
         } else {
             tooltipComponents.add(Component.translatable("tooltip.projectalone.chisel"));
+        }
+
+        if(stack.get(ModDataComponents.COORDINATES) != null) {
+            tooltipComponents.add(Component.literal("Last Block changed at\n" + stack.get(ModDataComponents.COORDINATES)));
         }
 
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
