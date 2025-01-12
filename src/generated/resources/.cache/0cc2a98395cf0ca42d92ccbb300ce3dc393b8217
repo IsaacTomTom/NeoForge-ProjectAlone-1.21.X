@@ -1,8 +1,9 @@
-// 1.21.1	2025-01-11T19:58:33.5082556	Tags for minecraft:item mod id projectalone
+// 1.21.1	2025-01-11T20:32:54.4856248	Tags for minecraft:item mod id projectalone
 8f3a92f49f8fe0e912951b8443be907d1716969b data/minecraft/tags/item/axes.json
 10f6dc8e7349dd51e081d7e6084241e25e5e6b16 data/minecraft/tags/item/hoes.json
 20a7bea8859539af6ed72d903327c487864d043b data/minecraft/tags/item/pickaxes.json
 b4bcfcaf324993bb08b47e885c413fd5b1be3556 data/minecraft/tags/item/shovels.json
 338cb9044ca20669ec0316f206cd8e4ba76aeb62 data/minecraft/tags/item/swords.json
+d1cbf474a742e5a39d1c7a706e23bea45608b875 data/minecraft/tags/item/trimmable_armor.json
 7c42338f3e8f8700ace0a35387d90907a147d756 data/projectalone/tags/item/transformable_items_b.json
 a51e4f26a7259126cca5e414a5d07a3ad46e0817 data/projectalone/tags/item/transformable_items_d.json

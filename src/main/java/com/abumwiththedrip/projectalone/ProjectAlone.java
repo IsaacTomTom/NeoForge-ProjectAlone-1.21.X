@@ -94,7 +94,12 @@ public class ProjectAlone
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.BISMUTH_SWORD);
             event.accept(ModItems.BISMUTH_AXE);
+            event.accept(ModItems.BISMUTH_HELMET);
+            event.accept(ModItems.BISMUTH_CHESTPLATE);
+            event.accept(ModItems.BISMUTH_LEGGINGS);
+            event.accept(ModItems.BISMUTH_BOOTS);
         }
+
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.BISMUTH_BLOCK);
